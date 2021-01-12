@@ -1,0 +1,26 @@
+{
+  "name": "@sup39/markdown-it-block-tag",
+  "version": "0.1.0",
+  "description": "A markdown-it plugin to write block tag",
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "markdown-it-plugin",
+    "tag"
+  ],
+  "repository": "sup39/markdown-it-block-tag",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "@sup39/markdown-it-attr": "^1.0.0",
+    "@sup39/markdown-it-inline-tag": "^1.0.0",
+    "eslint": "^7.17.0",
+    "eslint-config-google": "^0.14.0",
+    "markdown-it": "^12.0.4",
+    "mocha": "^8.2.1"
+  }
+}

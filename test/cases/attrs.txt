@@ -1,0 +1,56 @@
+inline attr
+.
+::: div {#iid}
+1 *2* 3
+:::
+.
+<div id="iid">1 <em>2</em> 3</div>
+.
+
+
+block attr
+.
+{#iid}
+::: div
+1 *2* 3
+:::
+.
+<div id="iid">1 <em>2</em> 3</div>
+.
+
+
+inline attr + block attr
+.
+{.a}
+::: div
+1 *2* 3
+:::
+::: div {.b}
+2 *3* 4
+:::
+{.c}
+::: div
+3 *4* 5
+:::
+.
+<div class="a">1 <em>2</em> 3</div>
+<div class="b">2 <em>3</em> 4</div>
+<div class="c">3 <em>4</em> 5</div>
+.
+
+details+summary
+.
+::: details {open}
+%@[sum]{.o}
+- 1
+- 2
+:::
+.
+<details open="">
+<summary class="o">sum</summary>
+<ul>
+<li>1</li>
+<li>2</li>
+</ul>
+</details>
+.

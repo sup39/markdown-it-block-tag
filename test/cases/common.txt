@@ -1,0 +1,122 @@
+block-tag with inline
+.
+::: div
+1 *2* 3
+:::
+# h1
+.
+<div>1 <em>2</em> 3</div>
+<h1>h1</h1>
+.
+
+
+block-tag with block(list)
+.
+::: div
+- 1
+- 2
+- 3
+:::
+# h1
+.
+<div>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>
+</div>
+<h1>h1</h1>
+.
+
+
+block-tag with multiple blocks(list, table, header)
+.
+::: div
+- 1
+- 2
+- 3
+
+p
+pp
+
+|a|b|
+|-|-|
+|c|d|
+
+# h1
+:::
+## h2
+.
+<div>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>
+<p>p
+pp</p>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>c</td>
+<td>d</td>
+</tr>
+</tbody>
+</table>
+<h1>h1</h1>
+</div>
+<h2>h2</h2>
+.
+
+
+multiple tags
+.
+::: div
+1 *2* 3
+:::
+::: div
+4 **5** 6
+:::
+.
+<div>1 <em>2</em> 3</div>
+<div>4 <strong>5</strong> 6</div>
+.
+
+
+no p in tag
+.
+::: div
+
+p
+pp
+:::
+.
+<div>p
+pp</div>
+.
+
+
+no p, p in tag
+.
+::: div
+
+p
+pp
+
+ppp
+pppp
+:::
+.
+<div>p
+pp
+<p>ppp
+pppp</p>
+</div>
+.
